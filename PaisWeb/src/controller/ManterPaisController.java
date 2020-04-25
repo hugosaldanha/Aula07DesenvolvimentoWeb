@@ -34,6 +34,8 @@ public class ManterPaisController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		
 		String pNome = request.getParameter("nome");
 		int pPopulacao = Integer.parseInt(request.getParameter("populacao"));
 		int pArea = Integer.parseInt(request.getParameter("area"));
